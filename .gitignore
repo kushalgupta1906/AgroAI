@@ -6,3 +6,9 @@ dist
 build
 temp.jpg
 *.pyc
+*.keras
+*.pkl
+
+saved_plant_disease_model_good/
+saved_plant_disease_model_efficientnet/
+error.txt
