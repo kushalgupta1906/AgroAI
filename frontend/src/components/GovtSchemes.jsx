@@ -19,8 +19,8 @@ const GovtSchemes = ({ crop }) => {
         setLoading(true);
 
         const response = await axios.get(
-          `http://127.0.0.1:5000/govt-schemes/${crop}`
-        );
+  `https://agroai-production-a2fc.up.railway.app/govt-schemes/${crop}`
+);
 
         setSchemes(
           response.data.schemes

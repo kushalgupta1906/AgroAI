@@ -438,7 +438,7 @@ const DiseaseDetection = () => {
 
       const response = await axios.post(
 
-        "http://127.0.0.1:5000/predict-disease",
+        "https://agroai-production-a2fc.up.railway.app/predict-disease",
 
         formData
 
