@@ -6,5 +6,5 @@ pandas
 joblib
 feedparser
 gunicorn
-scikit-learn
 Pillow
+scikit-learn==1.7.2
