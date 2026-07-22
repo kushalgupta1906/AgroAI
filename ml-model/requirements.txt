@@ -2,6 +2,7 @@ Flask
 flask-cors
 tensorflow
 numpy
+pandas
 joblib
 feedparser
 gunicorn
