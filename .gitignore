@@ -1,25 +1,44 @@
-node_modules
-venv
-__pycache__
-.env
-dist
-build
-temp.jpg
-*.pyc
-*.keras
-*.pkl
-!ml-model/crop_model_final.pkl
+# node_modules
+# venv
+# __pycache__
+# .env
+# dist
+# build
+# temp.jpg
+# *.pyc
+# *.keras
+# *.pkl
+# !ml-model/crop_model_final.pkl
 
-saved_plant_disease_model_good/
-saved_plant_disease_model_efficientnet/
-error.txt
+# # saved_plant_disease_model_good/
+# # saved_plant_disease_model_efficientnet/
+# error.txt
+# *.h5
+# *.keras
+# # *.pb
+
+# # saved_plant_disease_model/
+# # saved_plant_disease_model_good/
+# # saved_plant_disease_model_efficientnet/
+# # saved_plant_disease_model/
+# error.txt
+# test_eff.py
+# *.pb
+# !saved_plant_disease_model_good/saved_model.pb
+# !saved_plant_disease_model_good/fingerprint.pb
+# Model files
 *.h5
 *.keras
+*.pkl
 *.pb
 
-saved_plant_disease_model/
-saved_plant_disease_model_good/
-saved_plant_disease_model_efficientnet/
-saved_plant_disease_model/
-error.txt
-test_eff.py
+# Allow final crop model
+!ml-model/crop_model_final.pkl
+
+# Ignore old disease models
+ml-model/saved_plant_disease_model/
+ml-model/saved_plant_disease_model_efficientnet/
+
+# Allow final disease model
+!ml-model/saved_plant_disease_model_good/
+!ml-model/saved_plant_disease_model_good/**

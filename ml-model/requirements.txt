@@ -1,0 +1,9 @@
+Flask
+flask-cors
+tensorflow
+numpy
+joblib
+feedparser
+gunicorn
+scikit-learn
+Pillow
