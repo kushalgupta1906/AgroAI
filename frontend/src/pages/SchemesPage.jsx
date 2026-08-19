@@ -18,7 +18,7 @@ const SchemesPage = () => {
       try {
 
         const response = await axios.get(
-  `https://agroai-production-a2fc.up.railway.app/govt-schemes/${crop}`
+  `https://positive-joy-production-12bb.up.railway.app/govt-schemes/${crop}`
 );
 
         setSchemes(

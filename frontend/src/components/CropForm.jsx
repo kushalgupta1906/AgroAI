@@ -545,7 +545,7 @@ const CropForm = () => {
 
       const response = await axios.post(
 
-        "https://agroai-production-a2fc.up.railway.app/predict",
+        "https://positive-joy-production-12bb.up.railway.app/predict",
 
         {
 

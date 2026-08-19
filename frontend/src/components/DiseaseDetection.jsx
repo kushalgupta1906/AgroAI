@@ -438,7 +438,7 @@ const DiseaseDetection = () => {
 
       const response = await axios.post(
 
-        "https://agroai-production-a2fc.up.railway.app/predict-disease",
+        "https://positive-joy-production-12bb.up.railway.app/predict-disease",
 
         formData
 
