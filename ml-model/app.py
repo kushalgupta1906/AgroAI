@@ -6,6 +6,7 @@ import numpy as np
 import tensorflow as tf
 import os
 import feedparser
+from huggingface_hub import snapshot_download
 
 from tensorflow.keras.preprocessing import image
 
@@ -24,8 +25,19 @@ crop_model = joblib.load(
     "crop_model_final.pkl"
 )
 
+# disease_model = tf.saved_model.load(
+#     "saved_plant_disease_model_good"
+# )
+model_dir = snapshot_download(
+    repo_id="KushalGupta451/AgroAI-Plant-Disease",
+    allow_patterns="saved_plant_disease_model_good/**"
+)
+
 disease_model = tf.saved_model.load(
-    "saved_plant_disease_model_good"
+    os.path.join(
+        model_dir,
+        "saved_plant_disease_model_good"
+    )
 )
 
 
